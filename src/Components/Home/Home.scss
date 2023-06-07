@@ -1,0 +1,125 @@
+$bg: rgb(16 16 16);
+.banner {
+  height: 600px;
+  background-color: $bg;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 3rem;
+  box-sizing: border-box;
+  &::after {
+    content: none;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    background: $bg;
+    opacity: 0.4;
+  }
+  > h1,
+  p {
+    font-size: 3rem;
+    width: 40%;
+    z-index: 10;
+  }
+  p {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    font-weight: 100;
+  }
+
+  > div {
+    display: flex;
+
+    button {
+      padding: 1rem;
+      width: 150px;
+      outline: none;
+      border: none;
+      margin: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 10;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $bg;
+      transition: all 0.2s;
+
+      &:hover{
+        opacity: 0.8;
+      }
+
+      &:nth-child(odd){
+        color: black;
+      }
+      &:nth-child(even){
+        color: white;
+        background-color: rgb(42, 42, 42);
+      }
+       svg{
+        color: $bg;
+        font-size: 1.7rem;
+        margin: 0 10px;
+      }
+    }
+
+  }
+}
+
+.row {
+  padding: 1rem;
+  background-color: $bg;
+
+  > h2 {
+    font-weight: 400;
+    margin: 0.3rem;
+  }
+
+  > div {
+    display: flex;
+    overflow-x: auto;
+  }
+}
+
+.card {
+  width: 200px;
+  cursor: pointer;
+  margin: 0.3rem;
+  transition: transform 0.5s;
+
+  &:hover {
+    transform: translateY(-10px);
+    scale: 1.1;
+  }
+}
+
+.genreBox {
+  display: flex;
+  overflow-x: auto;
+  background-color: $bg;
+  height: 100px;
+  flex: 0%;
+  > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    color: white;
+    margin: 1rem;
+    padding: 1rem 0;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 8rem;
+
+    &:hover {
+      background-color: rgb(15, 15, 151);
+    }
+  }
+}
