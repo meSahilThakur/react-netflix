@@ -146,6 +146,7 @@ const Home = () => {
             : "rgb(16 16 16)",
         }}
       >
+        
         {popularMovies[0] && <h1>{popularMovies[0].title}</h1>}
         {popularMovies[0] && <p>{popularMovies[0].overview}</p>}
 

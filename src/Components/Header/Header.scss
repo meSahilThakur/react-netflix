@@ -38,3 +38,21 @@ $bg:rgb(16 16 16);
         }
     }
 }
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .header {
+      padding: 0.5rem;
+      align-items: center;
+    }
+  
+    .header > img {
+      width: 50%; /* Adjust the width as needed for your logo */
+    }
+  
+    .header > div {
+      width: 100%;
+      display: none; /* Hide the navigation links initially */
+    }
+  
+  }
